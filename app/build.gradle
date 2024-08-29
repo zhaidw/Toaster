@@ -5,6 +5,7 @@ android {
 
     defaultConfig {
         applicationId "com.hjq.toast.demo"
+        namespace "com.hjq.toast.demo"
         minSdkVersion 16
         targetSdkVersion 33
         versionCode 1206

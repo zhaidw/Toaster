@@ -12,10 +12,10 @@ buildscript {
         mavenCentral()
         google()
         // noinspection JcenterRepositoryObsolete
-        jcenter()
+//        jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.2'
+        classpath 'com.android.tools.build:gradle:8.3.2'
     }
 }
 
@@ -28,7 +28,7 @@ allprojects {
         mavenCentral()
         google()
         // noinspection JcenterRepositoryObsolete
-        jcenter()
+//        jcenter()
     }
 
     // 读取 local.properties 文件配置
@@ -51,5 +51,6 @@ allprojects {
 }
 
 tasks.register('clean', Delete) {
-    delete rootProject.buildDir
+//    delete rootProject.buildDir
+    delete rootProject.layout.buildDirectory
 }

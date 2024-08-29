@@ -4,6 +4,7 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
+        namespace "com.hjq.toast"
         minSdkVersion 14
         versionCode 1206
         versionName "12.6"
@@ -30,10 +31,10 @@ android {
 
 afterEvaluate {
     // 排除 BuildConfig.class 和 R.class
-    generateReleaseBuildConfig.enabled = false
-    generateDebugBuildConfig.enabled = false
-    generateReleaseResValues.enabled = false
-    generateDebugResValues.enabled = false
+//    generateReleaseBuildConfig.enabled = false
+//    generateDebugBuildConfig.enabled = false
+//    generateReleaseResValues.enabled = false
+//    generateDebugResValues.enabled = false
 }
 
 tasks.withType(Javadoc) {
@@ -44,7 +45,7 @@ tasks.withType(Javadoc) {
 
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
+//    classifier = 'sources'
 }
 
 task javadoc(type: Javadoc) {
@@ -53,7 +54,7 @@ task javadoc(type: Javadoc) {
 }
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
+//    classifier = 'javadoc'
     from javadoc.destinationDir
 }
 

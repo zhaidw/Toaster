@@ -1,4 +1,4 @@
-package com.hjq.toast.demo;
+package com.test;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -16,6 +16,7 @@ import com.hjq.permissions.XXPermissions;
 import com.hjq.toast.ToastParams;
 import com.hjq.toast.ToastStrategy;
 import com.hjq.toast.Toaster;
+import com.hjq.toast.demo.R;
 import com.hjq.toast.style.BlackToastStyle;
 import com.hjq.toast.style.CustomToastStyle;
 import com.hjq.toast.style.WhiteToastStyle;
